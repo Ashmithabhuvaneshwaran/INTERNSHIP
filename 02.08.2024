@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+   <head>
+       <title>this is title</title>
+   <link rel="stylesheet" href="./style.css">
+   <script>
+       document.write("INTERN")
+       <br>
+       function printhello()
+       {
+           var name = document.getElementById("name").value;
+           console.log("arrow function");
+       }
+       function addnumber()
+       {
+             let num1=document.getElementById("firstnumber").value*1;
+             let num2=document.getElementById("secondnumber").value*1;
+             let result=num1+num2;
+             let res=document.getElementById("res");
+             res.innerText=result;
+       }
+       function multiplication()
+       {
+             let num1=document.getElementById("firstnumber").value*1;
+             let num2=document.getElementById("secondnumber").value*1;
+             let result=num1*num2;
+             let res=document.getElementById("res");
+             res.innerText=result;
+       }
+       function subtraction()
+       {
+             let num1=document.getElementById("firstnumber").value*1;
+             let num2=document.getElementById("secondnumber").value*1;
+             let result=num1-num2;
+             let res=document.getElementById("res");
+             res.innerText=result;
+       }
+       function displayname() {
+            let username1 = document.getElementById("name1").value;
+            let username2 = document.getElementById("name2").value;
+            document.getElementById("res").innerText = username1 + " " + username2;
+        }
+
+        function convertUpperCase() 
+        {
+            let username= document.getElementById("name1").value;
+            document.getElementById("res").innerText = username.toUpperCase();
+        }
+
+        function convertLowerCase() 
+        {
+            let username= document.getElementById("name1").value;
+            document.getElementById("res").innerText = username.toLowerCase();
+        }
+        function concatstrings()
+        {
+           let username1=document.getElementById("name1").value;
+           let username2=document.getElementById("name2").value;
+           let res=document.getElementById("res")
+           res.innerText=username1+"-"+username2 /*.concat*/
+        }
+           function getlength()
+           {
+               let username1=document.getElementById("name1").value;
+               let res=document.getElementById("res")
+               res.innerText=username1.length
+           }
+           function changetocolor(color)
+           {
+               document.bgColor=color
+           }
+   </script>
+   </head>
+<body>
+    <br>
+   <label for="name1">Name 1</label>
+   <input type="text" id="name1" placeholder="enter your name1">
+   <label for="name2">Name 2</label>
+   <input type="text" id="name2" placeholder="enter your name2">
+   <button onclick="displayname()">displayname</button>
+   <button onclick="convertUpperCase()">Convert to Upper Case</button>
+   <button onclick="convertLowerCase()">Convert to Lower Case</button>
+   <button onclick="concatstrings()">concat</button>
+   <button onclick="getlength()">get length</button>
+   <br>
+   <br>
+   <input type="number" id="firstnumber"  placeholder="enter first number">
+   <input type="number" id="secondnumber" placeholder="enter seconds number">
+   <br>
+   <button onclick="addnumber()">add</button>
+   <button onclick="multiplication()">multiplication</button>
+   <button onclick="subtraction()">subtraction</button>
+   <h1 id="res"></h1>
+   <button onclick="changetocolor('black')">black</button>
+   <button onclick="changetocolor('pink')" >pink</button>
+   <button onclick="changetocolor('orange')">orange</button>
+   <button onclick="changetocolor('red')" >red</button>
+   <button onclick="changetocolor('blue')" >blue</button>
+   <button onclick="changetocolor('green')" >green</button>
+</body>
+</html>
