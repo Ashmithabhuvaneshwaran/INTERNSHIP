@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <body>
+    <head>
+        <title>this is title</title>
+        <style>
+        *{
+        background-color: rgb(80, 80, 80);
+        color: white;
+    }
+    /* tag based */
+    h1{
+        border: 1px solid green;
+    }
+    /* id based */
+    #table1
+    {
+        border: 2px solid yellow;
+    }
+    /* class based */
+    .table2{
+        border: 2px solid pink;
+        }
+        </style>
+    </head>
+        <br>
+        <p>this is paragraph</p>
+        <a href="">this is link tag</a>
+        <img src="" alt="">
+        <div></div>
+        <button></button>
+        <label for="name">Enter name:</label>
+        <input type="text" class="name">
+
+        <input type="checkbox"><input type="color">
+        <ol>
+            <li>ordered list</li>
+        </ol>
+        <ul>
+            <li>unorderd list</li>
+        </ul>
+        <table id="table1">
+            <tr>
+                <td><b>col1</b></td>
+                <td><b>col2</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <br>
+        <table class="table2">
+            <tr>
+                <td><b>col1</b></td>
+                <td><b>col2</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <section></section>
+        <sub></sub>
+        <sup></sup>
+        <form>
+            <label for="username"></label>
+            <input type="text" name="username" >
+            <label for="userpassword"></label>
+            <input type="password" name="userpassword">
+            <button >submit</button>
+        </form>
+        <script>
+        console.log("hello world")
+        </script>
+        </body>
+</html>
